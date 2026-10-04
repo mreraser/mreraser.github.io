@@ -130,7 +130,7 @@ strong, b { font-weight: 600; }
 .sidebar {
   position: sticky;
   top: var(--nav-h);
-  padding: 48px 0 48px;
+  padding: 64px 0 48px;
   text-align: center;
 }
 
@@ -200,7 +200,7 @@ strong, b { font-weight: 600; }
 .email { font-size: .75rem; color: var(--muted); }
 
 /* ---------- Main ---------- */
-.main { padding: 48px 0 64px; min-width: 0; }
+.main { padding: 64px 0 64px; min-width: 0; }
 section { scroll-margin-top: calc(var(--nav-h) + 24px); }
 
 section { margin-bottom: 64px; }
