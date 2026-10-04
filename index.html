@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jiwook Han</title>
+  <meta name="author" content="Jiwook Han">
+  <meta name="description" content="Jiwook Han — M.S. student at Kyung Hee University working on video understanding and multimodal LLMs.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%84%E2%80%8D%E2%99%82%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    // Apply saved theme before paint to avoid a flash.
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <nav class="nav" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#interests">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M1.5 12H4M20 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="page">
+
+    <!-- ============ Sidebar ============ -->
+    <aside class="sidebar">
+      <img class="avatar" src="assets/img/profile.jpg" alt="Photo of Jiwook Han" width="413" height="532">
+      <h1 class="name">Jiwook Han</h1>
+      <p class="role">M.S. Student<br>Kyung Hee University</p>
+      <p class="status"><span class="dot"></span>Applying for Ph.D. · Fall 2028</p>
+
+      <nav class="icons" aria-label="Links">
+        <a href="mailto:mreraser@khu.ac.kr" title="Email" aria-label="Email">
+          <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+        </a>
+        <a href="assets/pdf/cv.pdf" target="_blank" rel="noopener" title="CV" aria-label="CV" class="icon-text">CV</a>
+        <a href="https://www.linkedin.com/in/jiwookhan/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+        </a>
+        <a href="https://github.com/mreraser" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M9 19c-4 1.5-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.5 11.5 0 0 0-6 0C6.8 2.3 5.8 2.6 5.8 2.6a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.4 9c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2v3.5"/></svg>
+        </a>
+        <!-- TODO: fill in and uncomment
+        <a href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar">
+          <svg viewBox="0 0 24 24"><path d="M12 3 2 9l10 6 10-6z"/><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg>
+        </a>
+        -->
+      </nav>
+      <p class="email">mreraser (at) khu.ac.kr</p>
+    </aside>
+
+    <!-- ============ Main ============ -->
+    <main class="main">
+
+      <section id="about" class="reveal">
+        <h2 class="section-title">About</h2>
+        <p>
+          I am an M.S. student in Computer Science &amp; Engineering at
+          <a class="khu" href="https://www.khu.ac.kr/eng/user/main/view.do" target="_blank" rel="noopener">Kyung Hee University</a>, advised by
+          <a href="https://sites.google.com/site/jchoivision/" target="_blank" rel="noopener">Prof. Jinwoo Choi</a>
+          at <a href="https://vll.khu.ac.kr" target="_blank" rel="noopener">VLLab</a>. I also work closely with
+          <a href="http://www.joonseok.net/home.html" target="_blank" rel="noopener">Prof. Joonseok Lee</a> at Seoul National University.
+        </p>
+      </section>
+
+      <section id="interests" class="reveal">
+        <h2 class="section-title">Research Interests</h2>
+        <p class="lead">
+          My research interests lie in <strong>video understanding</strong>, <strong>object-centric learning</strong>,
+          and <strong>self-improving models</strong>. I am motivated by how humans acquire general world knowledge:
+          by reasoning over persistent entities rather than spurious correlations, and by continually learning from
+          self-generated experience. Specifically, I am interested in two questions: <em>what structured
+          representations allow video models to reason compositionally and transfer across domains</em>, and
+          <em>how models can keep acquiring knowledge from video without relying on human annotation</em>.
+          I am also broadly interested in <strong>world models</strong> that learn through prediction in latent space.
+        </p>
+
+        <div class="tags">
+          <span>Video Understanding</span>
+          <span>Object-Centric Learning</span>
+          <span>Self-Improving Models</span>
+          <span>World Models</span>
+        </div>
+      </section>
+
+      <section id="publications" class="reveal">
+        <h2 class="section-title">Publications</h2>
+        <p class="note">* denotes equal contribution</p>
+
+        <div class="pub-list">
+          <article class="pub" id="pub-evident">
+            <a class="pub-thumb" href="https://arxiv.org/abs/2605.26104" target="_blank" rel="noopener">
+              <img src="assets/img/pub/evident.png" alt="EVIDENT overview figure" loading="lazy">
+              <span class="badge b-neurips">NeurIPS 2026</span>
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title"><a href="https://arxiv.org/abs/2605.26104" target="_blank" rel="noopener">EVIDENT: Routing MLLM Adaptation through Entity-Grounded Visual Evidence for Cross-Domain Video Temporal Grounding</a></h3>
+              <p class="pub-authors">Geo Ahn*, <b>Jiwook Han*</b>, Youngrae Kim*, Joonseok Lee, Jinwoo Choi</p>
+              <p class="pub-venue">Neural Information Processing Systems <b>(NeurIPS) 2026</b></p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2605.26104" target="_blank" rel="noopener">arXiv</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub" id="pub-slotvtg">
+            <a class="pub-thumb" href="https://slotvtg.netlify.app/" target="_blank" rel="noopener">
+              <img src="assets/img/pub/slotvtg.png" alt="SlotVTG overview figure" loading="lazy">
+              <span class="badge b-cvprw">CVPRW 2026</span>
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title"><a href="https://slotvtg.netlify.app/" target="_blank" rel="noopener">SlotVTG: Object-Centric Adapter for Generalizable Video Temporal Grounding</a></h3>
+              <p class="pub-authors"><b>Jiwook Han*</b>, Geo Ahn*, Youngrae Kim*, Jinwoo Choi</p>
+              <p class="pub-venue">CVPR 2026 Workshop on <b>GRAIL-V</b></p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2603.25733" target="_blank" rel="noopener">arXiv</a>
+                <a href="https://slotvtg.netlify.app/" target="_blank" rel="noopener">Project</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="reveal">
+        <h2 class="section-title">Education</h2>
+        <div class="cards cards-2">
+          <div class="card">
+            <div class="logo"><img src="assets/img/logo/khu-emblem.png" alt="Kyung Hee University"></div>
+            <div>
+              <p class="card-name">Kyung Hee University</p>
+              <p class="card-role">M.S. in Computer Science &amp; Engineering</p>
+              <p class="card-meta">2026 – Present · GPA 4.3 / 4.3</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="logo"><img src="assets/img/logo/khu-emblem.png" alt="Kyung Hee University"></div>
+            <div>
+              <p class="card-name">Kyung Hee University</p>
+              <p class="card-role">B.S. in Industrial &amp; Management Systems Eng. / Computer Science &amp; Eng.</p>
+              <p class="card-meta">2020 – 2026 · GPA 3.95 / 4.3</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="reveal">
+        <h2 class="section-title">Experience</h2>
+        <div class="cards cards-3">
+          <a class="card" href="https://vll.khu.ac.kr" target="_blank" rel="noopener">
+            <div class="logo"><img src="assets/img/logo/khu-emblem.png" alt="VLLab, Kyung Hee University"></div>
+            <div>
+              <p class="card-name">VLLab, KHU</p>
+              <p class="card-role">Graduate Researcher</p>
+              <p class="card-meta">2026 – Present</p>
+            </div>
+          </a>
+          <div class="card">
+            <div class="logo logo-emoji">🤗</div>
+            <div>
+              <p class="card-name">OSSCA · Hugging Face</p>
+              <p class="card-role">Open-Source Contributor</p>
+              <p class="card-meta">2024 · <span class="award">Special Award</span></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="logo">
+              <svg viewBox="0 0 48 48" aria-label="Google"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.2C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.3-4.6 7l7.2 5.6c4.2-3.9 7.1-9.7 7.1-17.1z"/><path fill="#FBBC05" d="M10.5 28.5c-.5-1.4-.8-2.9-.8-4.5s.3-3.1.8-4.5l-7.9-6.2C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.8-6.2z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.2-5.6c-2.2 1.5-5.1 2.4-8.6 2.4-6.2 0-11.5-4.2-13.4-9.9l-7.9 6.2C6.6 42.6 14.6 48 24 48z"/></svg>
+            </div>
+            <div>
+              <p class="card-name">Google for Developers</p>
+              <p class="card-role">ML Bootcamp</p>
+              <p class="card-meta">2024</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>Jiwook Han · Updated October 2026</footer>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById('theme-toggle');
+      function current() {
+        var t = root.getAttribute('data-theme');
+        if (t) return t;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      btn.addEventListener('click', function () {
+        var next = current() === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+
+      // Fade sections in as they scroll into view.
+      var items = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        items.forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.08 });
+      items.forEach(function (el) { io.observe(el); });
+
+      // Highlight the nav link of the section currently in view.
+      var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+      var sections = navLinks.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); });
+      function updateActive() {
+        var line = 140;  // px below the top of the viewport
+        var idx = -1;
+        sections.forEach(function (sec, i) { if (sec && sec.getBoundingClientRect().top <= line) idx = i; });
+        // At the very bottom, the last section may never reach the line.
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) idx = sections.length - 1;
+        navLinks.forEach(function (a, i) { a.classList.toggle('active', i === idx); });
+      }
+      window.addEventListener('scroll', updateActive, { passive: true });
+      window.addEventListener('resize', updateActive);
+      updateActive();
+    })();
+  </script>
+</body>
+</html>

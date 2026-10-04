@@ -1,0 +1,77 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=0.8in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{1A5FB4}
+\definecolor{muted}{HTML}{59636E}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\vspace{-6pt}\rule{\linewidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% \entry{title}{date}{org}{description}
+\newcommand{\entry}[4]{%
+  \textbf{#1}\hfill{\color{muted}#2}\\
+  #3\ifx&#4&\else\\{\small\color{muted}#4}\fi\par\vspace{6pt}}
+
+\newcommand{\pub}[4]{%
+  \item \textbf{#1}\\ #2\\ \textit{#3} \hfill {\small #4}}
+
+\begin{document}
+
+{\LARGE\bfseries Jiwook Han}\\[4pt]
+M.S. Student, Computer Science \& Engineering, Kyung Hee University, South Korea\\[2pt]
+{\small
+\href{mailto:mreraser@khu.ac.kr}{mreraser@khu.ac.kr} \;|\;
+\href{https://www.linkedin.com/in/jiwookhan/}{linkedin.com/in/jiwookhan}
+% \;|\; \href{https://XXXX.github.io}{XXXX.github.io}  % TODO: homepage URL
+}
+
+\section*{Research Interests}
+Video understanding, object-centric learning, and self-improving models: object-centric inductive biases for robustness under distribution shift, self-evolving video LLMs via self-play RL, and world models.
+
+\section*{Education}
+\entry{M.S. in Computer Science \& Engineering}{Mar 2026 -- Present}
+  {Kyung Hee University, Yongin, South Korea}
+  {Advisor: Prof. Jinwoo Choi \quad GPA: 4.3 / 4.3}
+\entry{B.S. in Industrial \& Management Systems Engineering and Computer Science \& Engineering (Double Major)}{Mar 2020 -- Feb 2026}
+  {Kyung Hee University, Yongin, South Korea}
+  {GPA: 3.95 / 4.3}
+
+\section*{Publications}
+{\small $^*$ Equal contribution}
+\begin{enumerate}[leftmargin=*,label={[\arabic*]},itemsep=6pt]
+  \pub{EVIDENT: Routing MLLM Adaptation through Entity-Grounded Visual Evidence for Cross-Domain Video Temporal Grounding}
+      {Geo Ahn$^*$, \underline{\textbf{Jiwook Han}}$^*$, Youngrae Kim$^*$, Joonseok Lee, Jinwoo Choi}
+      {Conference on Neural Information Processing Systems (NeurIPS), 2026}
+      {\href{https://arxiv.org/abs/2605.26104}{[arXiv]}}
+  \pub{SlotVTG: Object-Centric Adapter for Generalizable Video Temporal Grounding}
+      {\underline{\textbf{Jiwook Han}}$^*$, Geo Ahn$^*$, Youngrae Kim$^*$, Jinwoo Choi}
+      {CVPR 2026 Workshop on GRAIL-V}
+      {\href{https://arxiv.org/abs/2603.25733}{[arXiv]} \href{https://slotvtg.netlify.app/}{[Project]}}
+\end{enumerate}
+
+\section*{Research Experience}
+\entry{Graduate Researcher, \href{https://vll.khu.ac.kr}{VLLab}}{Mar 2026 -- Present}
+  {Kyung Hee University (Advisor: Prof. Jinwoo Choi)}
+  {Video temporal grounding and cross-domain generalization of multimodal LLMs.}
+
+\section*{Activities \& Awards}
+\entry{Open Source Contribution Academy -- Hugging Face Track, Special Award}{Nov 2024}
+  {National IT Industry Promotion Agency (NIPA)}{}
+\entry{Machine Learning Bootcamp}{Oct 2024}
+  {Google for Developers}{}
+\entry{Deep Learning Specialization}{Aug 2024}
+  {DeepLearning.AI (Coursera)}{}
+
+% \section*{Skills}  % TODO
+% Python, PyTorch, ...
+
+\end{document}
