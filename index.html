@@ -256,6 +256,8 @@
         });
       }, { threshold: 0.08 });
       items.forEach(function (el) { io.observe(el); });
+      // Safety net: never leave content hidden if the observer misses a jump-scroll.
+      setTimeout(function () { items.forEach(function (el) { el.classList.add('in'); }); }, 1500);
 
       // Highlight the nav link of the section currently in view.
       var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
